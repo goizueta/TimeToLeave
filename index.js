@@ -20,8 +20,8 @@ function getForecast(context) {
     var forecast = mta
         .schedule(MY_STATION_CODE, MY_TRAIN_FEED)
         .then(function(result) {
-            var firstArrivalTime = getNthArrivalTime(0);
-            var secondArrivalTime = getNthArrivalTime(1);
+            var firstArrivalTime = getNthArrivalTime(result, 0);
+            var secondArrivalTime = getNthArrivalTime(result, 1);
             var currentTime = new Date().getTime();
 
             var minsUntilFirstArrival = Math.floor(
@@ -55,7 +55,7 @@ function getForecast(context) {
         });
 }
 
-function getNthArrivalTime(n) {
+function getNthArrivalTime(result, n) {
     return Number(
         result["schedule"][MY_STATION_CODE]["N"][n]["arrivalTime"] + "000" // Adding 3 digits to standardize time format
     );

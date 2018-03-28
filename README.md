@@ -1,10 +1,12 @@
-## mtaSkill
+## TimeToLeave
 
 A short alexa skill that tells you when the next train is leaving from your station.
 
 ### Motivation
 
 Since I often either miss the last train at the station, or arrive 10+ minutes early, I made a short alexa skill that will let me know when the next two trains are leaving my station.
+
+![](https://user-images.githubusercontent.com/2426597/38049988-aa40868a-3297-11e8-864f-0ef9c0a30ca9.gif)
 
 ### Installing and Running
 
