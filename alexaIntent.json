@@ -1,0 +1,31 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "is it time to leave",
+            "intents": [
+                {
+                    "name": "GetTrainTimeIntent",
+                    "slots": [],
+                    "samples": [
+                        "is it time to leave yet",
+                        "get train time",
+                        "when is the next q. train",
+                        "When's the next train",
+                        "When are trains coming",
+                        "When is the next train",
+                        "When are the next trains coming"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                }
+            ],
+            "types": []
+        }
+    }
+}
